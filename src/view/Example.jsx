@@ -38,11 +38,11 @@ const HorizontalScrollCarousel = () => {
 
   // Puntos de referencia para los anchos máximos y desplazamientos
   const breakpoints = [
-    { width: 810, xValue: -75 },
-    { width: 1024, xValue: -65 },
-    { width: 1280, xValue: -60 },
-    { width: 1536, xValue: -55 },
-    { width: 1728, xValue: -50 },
+    { width: 810, xValue: -85 },
+    { width: 1024, xValue: -75 },
+    { width: 1280, xValue: -70 },
+    { width: 1536, xValue: -65 },
+    { width: 1728, xValue: -60 },
   ];
 
   // Función para interpolar el valor de x basado en el ancho de la pantalla
@@ -108,21 +108,22 @@ const Card = ({ card }) => {
 
   return (
     <motion.div
-      className={`group relative h-[800px] w-[80vw] md:w-[500px] overflow-hidden flex flex-col items-center ${justifyClass} gap-10`}
+      className={`group relative h-[800px] w-[80vw] md:w-[600px] overflow-hidden flex flex-col items-center ${justifyClass} gap-10`}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       viewport={{ once: true }}
     >
+      {/* Imagen con opacidad que aparece después del texto */}
       <picture className="cursor-pointer drop-shadow-xl scale-100 hover:scale-105 transition-all duration-300 overflow-hidden w-[500px] flex justify-end rounded-md">
         <div className="relative">
           <motion.img
-            className="rounded-md w-[400px] md:w-[500px]"
+            className="rounded-md w-[400px] md:w-[600px]"
             src={card.img}
             alt={card.title}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 2, delay: 0.5 }}
+            transition={{ duration: 2, delay: 0.5 }} // Se retrasa un poco después del texto
           />
           <div className="absolute inset-0 bg-[#ff9337] opacity-0 hover:opacity-10 transition-all duration-300 rounded-md"></div>
         </div>
@@ -131,7 +132,7 @@ const Card = ({ card }) => {
         className="flex flex-col gap-5 lg:text-start text-center "
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 0 }} 
+        transition={{ duration: 1, delay: 0 }} // Aparece primero
       >
         <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold ">{card.title}</h3>
         <p className="text-base text-[#94A2B3]  line-clamp-3">{card.description}</p>
