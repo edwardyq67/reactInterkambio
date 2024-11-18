@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-primary {
+    @apply flex text-nowrap w-52 scale-100 text-base gap-2 transition-all duration-300 justify-center items-center bg-[#ff730d] px-3 py-2 rounded-md;
+  }
+  
+  .btn-primary:hover {
+    @apply bg-[#ff9337];
+  }

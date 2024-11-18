@@ -1,0 +1,128 @@
+.body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-slide .title {
+  font-size: 41px;
+  font-weight: 300;
+}
+
+.swiper-slide .subtitle {
+  font-size: 21px;
+}
+
+.swiper-slide .text {
+  font-size: 14px;
+  max-width: 400px;
+  line-height: 1.3;
+}
+
+
+.custom-shape-divider-bottom-1731866381 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1731866381 svg {
+  position: relative;
+  display: block;
+  width: calc(158% + 1.3px);
+  height: 55px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1731866381 .shape-fill {
+  fill: #ffffff;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1731866381 svg {
+      width: calc(202% + 1.3px);
+      height: 55px;
+  }
+}
+
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+.custom-shape-divider-bottom-1731904399 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1731904399 svg {
+  position: relative;
+  display: block;
+  width: calc(119% + 1.3px);
+  height: 70px;
+}
+
+.custom-shape-divider-bottom-1731904399 .shape-fill {
+  fill: #ffffff;
+}
+
+.custom-shape-divider-top-1731904564 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1731904564 svg {
+  position: relative;
+  display: block;
+  width: calc(119% + 1.3px);
+  height: 67px;
+}
+
+.custom-shape-divider-top-1731904564 .shape-fill {
+  fill: #FFFFFF;
+}
